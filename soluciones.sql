@@ -1,8 +1,8 @@
-# outer-joins-ministore
+--# outer-joins-ministore
 
-outer-joins-ministore/├── schema.sql
-├── soluciones.sql
-└── README.md
+--outer-joins-ministore/├── schema.sql
+--├── soluciones.sql
+--└── README.md
 
 -- ══════════════════════════════════════════
 -- MiniStore — Schema y datos de prueba
@@ -15,7 +15,7 @@ LEFT JOIN Ventas AS VTS
 ON PR.producto_id = VTS.producto_id
 WHERE VTS.venta_id IS NULL;
 
-Muestra: El nombre, la categoría y el precio de aquellos artículos que forman parte del catálogo pero que no registran ninguna transacción de venta.   Resultado obtenido en la base de datos: Arroja exactamente los productos "Hub USB-C 7p" y "Parlante Bluetooth", cumpliendo de forma exacta con la consigna
+
 
 -- Mostrá todos los productos y sus ventas asociadas.
 -- Los productos sin ventas aparecerán con NULL en las columnas de ventas.
